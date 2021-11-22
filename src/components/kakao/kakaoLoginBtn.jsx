@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
 import styled from 'styled-components'
-/*global kakao*/
 
+/*global kakao*/
 
 class KakaoLoginBtn extends Component {
   componentDidMount() {
-    const apiKey = 'API_KEY';
+
+    const apiKey = 'f9b256f27ac94c60b3b60548d768b661';
     const kakaoScript = document.createElement("script");
     kakaoScript.src = 'https://developers.kakao.com/sdk/js/kakao.js';
     document.head.appendChild(kakaoScript);
@@ -34,7 +35,7 @@ class KakaoLoginBtn extends Component {
   }
 
   render() {
-    return <LoginBtn type='button' id='kakao-login-btn'>카카오 로그인</LoginBtn>
+    return <LoginBtn type='button' id='kakao-login-btn' />
   }
 }
 
