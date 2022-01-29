@@ -12,19 +12,23 @@ const KakaoMap = () => {
       level: 3
     };
     let map = new kakao.maps.Map(container, options);
+    //KakaoMaps Maker
+    let markerPosition  = new kakao.maps.LatLng(37.365264512305174, 127.10676860117488);
+    let marker = new kakao.maps.Marker({
+      position: markerPosition
+    });
+    marker.setMap(map);
   }, [])
 
 
   return (
-    <div>
-      <MapBox id="map"></MapBox>
-    </div>
+      <MapBox id="map"/>
   )
 }
 
 const MapBox = styled.div`
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
 `
 
 export default KakaoMap;
