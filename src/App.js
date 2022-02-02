@@ -1,10 +1,10 @@
 import KakaoMap from './components/kakao/kakaoMap'
 import KakaoLoginBtn from './components/kakao/kakaoLoginBtn'
 import styled from 'styled-components'
+import AxiosGet from './components/axios/axiosGet'
 
 
 function App() {
-  const REST_API_KEY = "f9b256f27ac94c60b3b60548d768b661";
 
   return (
     <div className="App">
@@ -12,9 +12,12 @@ function App() {
         <KakaoMap />
       </MapBox>
       <KakaoLoginBtn />
+      <h2>API 연습</h2>
+      <AxiosGet />
     </div>
   );
 }
+
 
 export default App;
 
