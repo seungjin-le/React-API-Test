@@ -22,13 +22,18 @@ const KakaoMap = () => {
 
 
   return (
-      <MapBox id="map"/>
+    <MapBox>
+      <Map id="map"/>
+    </MapBox>
   )
 }
 
-const MapBox = styled.div`
+const Map = styled.div`
   width: 100%;
   height: 100%;
 `
-
+const MapBox = styled.div`
+  width: 400px;
+  height: 400px;
+`
 export default KakaoMap;
