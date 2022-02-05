@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react'
 import styled from 'styled-components'
 import axios from 'axios'
+import Pagination from 'react-js-pagination'
 
 
 const AxiosGet = () => {
@@ -39,20 +40,22 @@ const AxiosGet = () => {
       )
       .catch(err => console.log(err))
   }
+
+
   return (
     <div>
       <input type="text" onChange={onchange}/>
       {data.map((v,i) => {
-          return(
-            <div key={i}>
-              <h2>{v.title}</h2>
-              <Imgs src={v.thumbnail}/>
-              <div>{v.contents}</div>
-              <div>{v.price}원 저자 {v.authors.map(v => v)}</div>
-              <div>링크 <a href={v.url}>클릭</a></div>
-            </div>
-          )
-        })
+        return(
+          <div key={i}>
+            <h2>{v.title}</h2>
+            <Imgs src={v.thumbnail}/>
+            <div>{v.contents}</div>
+            <div>{v.price}원 저자 {v.authors.map(v => v)}</div>
+            <div>링크 <a href={v.url}>클릭</a></div>
+          </div>
+        )
+      })
       }
     </div>
   )

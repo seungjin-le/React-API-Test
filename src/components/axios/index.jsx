@@ -1,23 +1,11 @@
-
 import AxiosPost from './axiosPost'
-import Pagination from 'react-js-pagination'
-import {useState} from 'react'
+import AxiosGet from './axiosGet'
 
 
 
 const AxiosPage = () => {
-  const handlePageChange = () => {
-
-  };
   return (
     <>
-      <Pagination
-        activePage={3}
-        itemsCountPerPage={10}
-        totalItemsCount={450}
-        pageRangeDisplayed={5}
-        onChange={handlePageChange}
-      />
       <AxiosPost />
     </>
   )
