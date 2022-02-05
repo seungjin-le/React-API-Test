@@ -7,8 +7,9 @@ const AxiosPage = () => {
   return (
     <>
       <AxiosPost />
+      {/*<AxiosGet />*/}
     </>
   )
 }
-//<AxiosGet />
+
 export default AxiosPage;

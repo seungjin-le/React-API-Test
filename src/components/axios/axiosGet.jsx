@@ -1,7 +1,6 @@
 import {useEffect, useState} from 'react'
 import styled from 'styled-components'
 import axios from 'axios'
-import Pagination from 'react-js-pagination'
 
 
 const AxiosGet = () => {
