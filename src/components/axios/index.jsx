@@ -6,8 +6,9 @@ import AxiosGet from './axiosGet'
 const AxiosPage = () => {
   return (
     <>
-      <AxiosPost />
-      {/*<AxiosGet />*/}
+      {/*<AxiosPost />*/}
+      <AxiosGet />
+      {/**/}
     </>
   )
 }
